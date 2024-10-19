@@ -1,0 +1,19 @@
+.accordion-item {
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
+
+.accordion-title {
+  padding: 1rem;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.accordion-content {
+  padding: 1rem;
+  background-color: #f9f9f9;
+}
+
+.accordion-content p {
+  margin: 0;
+}
