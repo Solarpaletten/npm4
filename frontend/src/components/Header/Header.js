@@ -16,7 +16,7 @@ function Header() {
         <span>Partnership points 0,00 €</span>
       </div>
       <div className="header-right">
-        <span>Leandid Kanoplich</span>
+        <span>Leanid</span>
         <span>UG SWAPOIL</span>
         <FontAwesomeIcon icon={faSmile} style={{ color: 'orange', marginLeft: '10px' }} />
         <div className="user-avatar"></div> {/* Placeholder for the user avatar */}
