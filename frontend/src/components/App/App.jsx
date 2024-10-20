@@ -4,6 +4,7 @@ import Header from '../Header/Header';
 import Home from '../Home/Home';
 import RegisterForm from '../RegisterForm/RegisterForm';
 import LoginForm from '../LoginForm/LoginForm';
+import Dashboard from '../Dashboard/Dashboard';
 import Clients from '../Clients/Clients';
 import './App.css';
 
@@ -32,7 +33,7 @@ function App() {
     console.log("User logged in");
     setIsLoggedIn(true); // Устанавливаем состояние залогиненности
     localStorage.setItem('isLoggedIn', 'true'); // Сохраняем информацию в localStorage
-    navigate('/clients'); // Перенаправляем на страницу клиентов после логина
+    navigate('/dashboard'); // Перенаправляем на страницу клиентов после логина
   };
 
   // Функция для обработки выхода из системы
@@ -51,6 +52,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/register" element={<RegisterForm onRegister={handleRegister} />} />
           <Route path="/login" element={<LoginForm onLogin={handleLogin} />} />
+          {isLoggedIn && <Route path="/dashboard" element={<Dashboard />} />}
           {isLoggedIn && <Route path="/clients" element={<Clients />} />}
         </Routes>
       </div>
